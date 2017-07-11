@@ -16,7 +16,7 @@ public class Service {
 //        business.setDeviceWriter(new FloppyWriter());
 //        business.write();
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         Business business = (Business) applicationContext.getBean("business");
         business.write();
     }

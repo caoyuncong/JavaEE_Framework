@@ -13,7 +13,7 @@ public class Service {
         /*
             使用 Spring 方式，输出 “Hello, Tom”
          */
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         Hello hello= (Hello) applicationContext.getBean("hello");
         hello.sayHello();
     }

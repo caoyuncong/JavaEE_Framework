@@ -22,6 +22,7 @@
 
     <bean id="hello" class="demo.d.Hello">
         <!--<property name="name" value="tom"/>-->
-        <property name="name" ref="string"/>
+        <!--<property name="name" ref="string"/>-->
+        <property name="name" ref="stringBuffer"/>
     </bean>
 </beans>
